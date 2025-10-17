@@ -108,6 +108,7 @@ h1 {
 }
 #homeGallery {
   column-count: 3;
+  column-gap: 0;
   width: 100%;
   margin: 0;
     }
