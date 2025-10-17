@@ -24,14 +24,22 @@
 
   <div id="footer"></div>
 
-  <script>
-    async function loadPart(id, file) {
+<script>
+  async function loadPart(id, file) {
+    try {
       const res = await fetch(file);
-      document.getElementById(id).innerHTML = await res.text();
+      if (!res.ok) throw new Error(`Could not load ${file}`);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    } catch (err) {
+      console.error(err);
     }
-    loadPart("header", "header.html");
-    loadPart("footer", "footer.html");
-  </script>
+  }
+
+  // Load header and footer
+  loadPart("header-container", "header.html");
+  loadPart("footer", "footer.html");
+</script>
 </body>
 </html>
 </footer>
