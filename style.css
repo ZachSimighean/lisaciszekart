@@ -15,7 +15,7 @@ footer, #header {
   background: #fff7b6 !important;
   color: #000 !important;
 }
-#header {
+#header-content {
     display: grid;
     grid-template-columns: 0.7fr 1fr;
     align-items: center;
