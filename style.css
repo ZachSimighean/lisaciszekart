@@ -15,6 +15,10 @@ footer, #header-content {
   background: #fff7b6 !important;
   color: #000 !important;
 }
+a {
+	color: #000 !important;
+	text-decoration: none !important;
+}
 #header-content {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
@@ -47,10 +51,6 @@ h1 {
 }
 #navigation ul li {
   margin: 0 10px;
-}
-#navigation a {
-	color: #000 !important;
-	text-decoration: none !important;
 }
 .ico {
     font-size: 40px;
