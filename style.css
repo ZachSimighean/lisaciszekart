@@ -24,7 +24,7 @@ a {
 }
 h1 {
   display: inline-block;
-  padding-right: 5px; /* small buffer for overhanging strokes */
+  padding: 0 9px 0 13px;
   font-size: 60px;
   font-family: "Mr Dafoe", cursive;
   font-weight: 400;
@@ -38,7 +38,8 @@ h1 {
 }
 #logo a {
   display: inline-block;
-  width: auto; 
+  width: auto;
+  transition: all 0.3s ease;
 }
 #logo a:hover {
     background: linear-gradient(
@@ -55,7 +56,6 @@ h1 {
   -webkit-text-fill-color: transparent; 
   background-clip: text;
   color: transparent;
-  transition: 0.3s;
 }
 #navigation {
     display: flex;
