@@ -38,6 +38,23 @@ h1 {
   display: inline-block;
   width: auto; 
 }
+#logo a:hover {
+    background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  color: transparent;
+  transition: 0.3s;
+}
 #navigation {
     display: flex;
     font-size: 20px;
