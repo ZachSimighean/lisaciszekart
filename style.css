@@ -79,7 +79,10 @@ h1 {
         }
         #header {
          grid-template-columns: 1fr 0.7fr;       
-        }
+        }      
+		h1 {
+         font-size: 40px;
+       }
         }
 #footer {
     text-align: center;
