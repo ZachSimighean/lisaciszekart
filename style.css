@@ -48,6 +48,10 @@ h1 {
 #navigation ul li {
   margin: 0 10px;
 }
+#navigation a {
+	color: #000 !important;
+	text-decoration: none !important;
+}
 .ico {
     font-size: 40px;
     margin-right: 20px;
