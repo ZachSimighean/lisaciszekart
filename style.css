@@ -1,0 +1,12 @@
+@import url('//fonts.googleapis.com/css?family=Lato:400,300');
+* {
+font-family: 'Lato', sans-serif;
+}
+body {
+	background-color: rgba(247, 247, 247, 1) /*{body|background-color}*/;
+	color: rgba(28, 28, 28, 1) /*{body|text-colour}*/;wr
+}
+::selection {
+  background: #fff7b6 !important;
+  color: #000 !important;
+}
