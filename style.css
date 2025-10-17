@@ -101,6 +101,9 @@ h1 {
 		font-size: 35px;
     	margin-right: 12px;
        }
+		#header-content {
+		grid-template-columns: 1fr 1fr;
+		}
 		}
 #footer {
     text-align: center;
