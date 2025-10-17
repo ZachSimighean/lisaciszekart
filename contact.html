@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lisa Ciszek Art</title>
+</head>
+
+<body>
+  <div id="header"></div>
+
+<p>contact page under construction</p>
+
+  <div id="footer"></div>
+
+<script>
+  async function loadPart(id, file) {
+    try {
+      const res = await fetch(file);
+      if (!res.ok) throw new Error(`Could not load ${file}`);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  // Load header and footer
+  loadPart("header", "header.html");
+  loadPart("footer", "footer.html");
+</script>
+</body>
+</html>
