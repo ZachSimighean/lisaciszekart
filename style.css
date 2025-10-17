@@ -19,6 +19,7 @@ footer, #header {
     display: grid;
     grid-template-columns: 0.7fr 1fr;
     align-items: center;
+    padding: 10px 0;
 }
 h1 {
   font-size: 70px;
@@ -49,7 +50,7 @@ h1 {
 }
 .ico {
     font-size: 40px;
-    margin-right: 10px;
+    margin-right: 20px;
     color: #000;
 }
     @media (max-width: 910px) {
@@ -70,7 +71,7 @@ h1 {
         #navigation ul {
          flex-direction: column;
          align-items: flex-start; 
-         padding-left: 20px; 
+         padding: 0 10px 0 30px; 
          list-style: square;
         }
         #navigation ul li {
@@ -79,9 +80,12 @@ h1 {
         }
         #header {
          grid-template-columns: 1fr 0.7fr;       
-        }      
-		h1 {
+        }
+        h1 {
          font-size: 40px;
+       }
+       #logo {
+        padding: 0 0 0 25px;
        }
         }
 #footer {
