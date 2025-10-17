@@ -15,3 +15,11 @@ h1 {
 	font-size: 35px;
 	font-family: "Allura", cursive; 
 }
+#header {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    align-items: center;
+    justify-items: right;
+    background-color: #fff;
+	margin: 20px 0px;
+}
