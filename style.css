@@ -4,11 +4,9 @@
 font-family: 'Lato', sans-serif;
 }
 body {
+	background: #fff;
 	color: #000;
     margin: 0;
-}
-#footer, #header-content {
-    background: #fff;
 }
 ::selection {
   background: #fff7b6 !important;
