@@ -118,6 +118,7 @@ h1 {
 }
 #homeGallery figure {
   display: inline-block;
+  vertical-align: top;
   width: 100%;
   margin: 0;
   break-inside: avoid;
