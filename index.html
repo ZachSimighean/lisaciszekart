@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lisa Ciszek Art</title>
 </head>
-  
+
 <body>
-<header>
-  <section id="header">
-    <div id="logo"><h1>Lisa Ciszek</h1></div>
-
-    <div id="navigation">
-        <a href="https://www.instagram.com/lisaciszekart/" target="_blank" class="social ico"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/p/Lisa-Ciszek-Art-100094654323729/" target="_blank" class="social ico"><i class="fab fa-facebook"></i></a>
-        <ul>
-            <li>Home</li>
-            <li>Gallery</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-
-    </section>
-</header>
+  <div id="header"></div>
 
 <section id="homeGallery">
 <figure><img src="https://raw.githubusercontent.com/ZachSimighean/lisaciszekart/refs/heads/main/images/Macrorose.jpg"></figure>
@@ -39,11 +22,18 @@
 <figure><img src="https://raw.githubusercontent.com/ZachSimighean/lisaciszekart/refs/heads/main/images/MyFridaBlythedollportrait.jpg"></figure>
 </section>
 
-<footer>
-   <section id="footer">
-    <h1>Lisa Ciszek</h1>
-    <div id="footerSocialLinks">Email • Instagram • Facebook</div>
-   </section>
+  <div id="footer"></div>
+
+  <script>
+    async function loadPart(id, file) {
+      const res = await fetch(file);
+      document.getElementById(id).innerHTML = await res.text();
+    }
+    loadPart("header", "header.html");
+    loadPart("footer", "footer.html");
+  </script>
+</body>
+</html>
 </footer>
 </body>
 </html>
