@@ -181,7 +181,7 @@ h2 {
 
 #cont a::after,
 #footer a::after,
-#navigation ul li a::after,{
+#navigation ul li a::after {
   content: "";
   position: absolute;
   left: 0;
