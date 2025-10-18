@@ -14,9 +14,19 @@
     </div>
   </section>
 
-  <script>
-    document.addEventListener('contextmenu', e => {
-      if (e.target.tagName === 'IMG') e.preventDefault();
+<script>
+  document.addEventListener('contextmenu', e => {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+
+  document.addEventListener('dragstart', e => {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(img => {
+      img.setAttribute('draggable', 'false');
     });
-  </script>
+  });
+</script>
 </header>
