@@ -41,12 +41,12 @@ h2 {
     justify-content: left;
     padding: 0 0 0 70px;
 }
-#logo a {
+#logo a, #flogo {
   display: inline-block;
   width: auto;
   transition: all 0.3s ease;
 }
-#logo a:hover, .ico:hover {
+#logo a:hover, .ico:hover, #flogo:hover {
     background: linear-gradient(
     to right,
     red,
