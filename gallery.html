@@ -16,5 +16,31 @@
 
   <div id="footer"></div>
 
+    <script>
+    async function loadPart(id, file) {
+      try {
+        const res = await fetch(file);
+        if (!res.ok) throw new Error(`Could not load ${file}`);
+        const html = await res.text();
+        const container = document.getElementById(id);
+        container.innerHTML = html;
+
+        // Run any <script> tags inside the loaded file
+        const scripts = container.querySelectorAll("script");
+        scripts.forEach(script => {
+          const newScript = document.createElement("script");
+          if (script.src) newScript.src = script.src;
+          else newScript.textContent = script.textContent;
+          document.body.appendChild(newScript);
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    loadPart("header", "header.html");
+    loadPart("footer", "footer.html");
+  </script>
+  
 </body>
 </html>
