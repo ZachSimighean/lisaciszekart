@@ -163,7 +163,7 @@ h1 {
 	margin: 0;
 }
 #cont {
-	margin: 175px 0;
+	padding: 175px 20px;
 	text-align: center;
 }
 #cont a {
