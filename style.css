@@ -172,14 +172,16 @@ h2 {
 	font-weight: bold;
 }
 #cont a,
-#footer a {
+#footer a,
+#navigation ul li a {
   position: relative;
   text-decoration: none;
   color: inherit;
 }
 
 #cont a::after,
-#footer a::after {
+#footer a::after,
+#navigation ul li a::after,{
   content: "";
   position: absolute;
   left: 0;
@@ -191,6 +193,7 @@ h2 {
 }
 
 #cont a:hover::after,
-#footer a:hover::after {
+#footer a:hover::after,
+#navigation ul li a:hover::after{
   width: 100%;
 }
