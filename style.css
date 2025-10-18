@@ -176,7 +176,7 @@ h2 {
 	font-weight: bold;
 }
 #cont a,
-#footer a,
+#footerSocialLinks a,
 #navigation ul li a {
   position: relative;
   text-decoration: none;
@@ -184,7 +184,7 @@ h2 {
 }
 
 #cont a::after,
-#footer a::after,
+#footerSocialLinks a::after,
 #navigation ul li a::after {
   content: "";
   position: absolute;
@@ -199,7 +199,7 @@ h2 {
 }
 
 #cont a:hover::after,
-#footer a:hover::after,
+#footerSocialLinks a:hover::after,
 #navigation ul li a:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
