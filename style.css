@@ -166,3 +166,10 @@ h1 {
 	margin: 175px 0;
 	text-align: center;
 }
+#cont a {
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+#cont a:hover {
+	text-decoration: underline;
+}
