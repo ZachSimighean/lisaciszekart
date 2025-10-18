@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lisa Ciszek Art</title>
+</head>
+
+<body>
+  <header id="header"></header>
+
+  
+<section id="cont">  
+<h2>Pet Portraits</h2>
+<p>If you're interested in having me do a portrait for your pet, please send me an email, to <a href="mailto:lisa@wsuperstore.com.au">lisa@wsuperstore.com.au</a></p>
+<p>Or</p>
+<p>DM via <a href="https://www.instagram.com/lisaciszekart/" target="_blank" rel="noopener noreferrer">Instagram</a>
+or
+<a href="https://www.facebook.com/p/Lisa-Ciszek-Art-100094654323729/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+</section>
+  
+  <footer id="footer"></footer>
+
+  <script>
+    async function loadPart(id, file) {
+      try {
+        const res = await fetch(file);
+        if (!res.ok) throw new Error(`Could not load ${file}`);
+        const html = await res.text();
+        const container = document.getElementById(id);
+        container.innerHTML = html;
+
+        // Run any <script> tags inside the loaded file
+        const scripts = container.querySelectorAll("script");
+        scripts.forEach(script => {
+          const newScript = document.createElement("script");
+          if (script.src) newScript.src = script.src;
+          else newScript.textContent = script.textContent;
+          document.body.appendChild(newScript);
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    loadPart("header", "header.html");
+    loadPart("footer", "footer.html");
+  </script>
+  
+</body>
+</html>
