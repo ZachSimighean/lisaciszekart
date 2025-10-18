@@ -112,10 +112,16 @@ h1 {
 		   #navigation ul li {
 	  		margin: 0;
 			}
+			.ico {
+				margin-right: 10px;
+			}
         }
         @media (max-width: 500px) {
 			#navigation ul {
 	         padding: 0 10px 0 10px; 
+	        }
+			#navigation {
+	         margin: 0 5px 0 10px; 
 	        }
 			h1 {
 	        font-size: 33px;
