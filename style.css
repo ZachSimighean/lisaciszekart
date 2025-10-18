@@ -155,3 +155,7 @@ h1 {
   display: block;
 	margin: 0;
 }
+# cont {
+	min-height: 900px;
+	text-align: center;
+}
