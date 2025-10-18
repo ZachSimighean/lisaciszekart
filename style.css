@@ -13,7 +13,7 @@ body {
 }
 a {
 	color: #000 !important;
-	text-decoration: none !important;
+	text-decoration: none;
 }
 #header-content {
     display: grid;
@@ -170,8 +170,18 @@ h2 {
 }
 #cont a {
 	font-weight: bold;
-	transition: all 0.3s ease;
 }
-#cont a:hover {
-	text-decoration: underline;
+#cont a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* thickness */
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+#cont a:hover::after {
+  width: 100%;
 }
