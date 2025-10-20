@@ -209,7 +209,11 @@ h2 {
     grid-template-columns: 1fr 1fr;
 }
 .AM1 {
+	display: flex;
 	padding: 20px 0 20px 20px;
+	justify-content: center;
+  	align-items: center;
+}
 }
 .AM1 img {
 	width: 550px;
@@ -218,3 +222,18 @@ h2 {
 .AM2 {
 	padding: 20px 20px 20px 0;
 }
+ @media (max-width: 850px) {
+	.AM {
+	grid-template-columns: 1fr;
+	}
+	.AM1 img {
+	max-width: 50%;
+	}
+	 .AM1 {
+	display: flex;
+	padding: 20px;
+    }
+	.AM2 {
+	padding: 0 20px 20px 20px;
+}
+ }
