@@ -204,3 +204,17 @@ h2 {
 #navigation ul li a:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
+.AM {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.AM1 {
+	padding: 20px 0 20px 20px;
+}
+.AM1 img {
+	width: 550px;
+	max-width: 90%;
+}
+.AM2 {
+	padding: 20px 20px 20px 0;
+}
