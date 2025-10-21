@@ -244,7 +244,7 @@ h2 {
 	}
 }
  }
-.gallery {
+#gallery {
 	display: flex;
   	margin: 30px auto;
 	justify-content: center;
