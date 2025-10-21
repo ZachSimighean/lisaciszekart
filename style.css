@@ -247,10 +247,10 @@ h2 {
 	display: flex;
   	margin: 30px auto;
 	justify-content: center;
-	align-content: center;
+	text-align: center;
 	width: 1500px;
 	max-width: 100%;
 }
 #gallery img {
-	max-height: 900px;
+	max-height: 700px;
 }
