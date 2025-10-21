@@ -248,6 +248,7 @@ h2 {
 }
 #gallery {
 	display: flex;
+	flex-direction: column;
   	margin: 30px auto;
 	justify-content: center;
 	text-align: center;
