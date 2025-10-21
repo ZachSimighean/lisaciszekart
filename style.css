@@ -244,3 +244,11 @@ h2 {
 	}
 }
  }
+.gallery {
+	display: flex;
+  	margin: 30px auto;
+	justify-content: center;
+	align-content: center;
+	width: 1500px;
+	max-width: 100%;
+}
