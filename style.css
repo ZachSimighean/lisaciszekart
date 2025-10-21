@@ -252,3 +252,6 @@ h2 {
 	width: 1500px;
 	max-width: 100%;
 }
+#gallery img {
+	max-height: 900px;
+}
