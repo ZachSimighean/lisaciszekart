@@ -264,3 +264,6 @@ h2 {
   border-bottom: 1px solid #bfbfbf;
   padding-bottom: 40px;
 }
+#gallery figcaption {
+  padding: 0 20px;
+}
