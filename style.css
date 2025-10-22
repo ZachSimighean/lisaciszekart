@@ -257,6 +257,7 @@ h2 {
 }
 #gallery img {
 	max-height: 700px;
+	max-width: 97%;
 }
 #gallery article {
   margin-bottom: 20px;
