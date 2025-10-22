@@ -2,7 +2,7 @@
 * {
 font-family: "Figtree", sans-serif;
 }
-html {
+html, body {
   scroll-behavior: smooth;
 }
 body {
