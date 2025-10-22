@@ -258,3 +258,8 @@ h2 {
 #gallery img {
 	max-height: 700px;
 }
+#gallery article {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 40px;
+}
